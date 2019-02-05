@@ -26,9 +26,17 @@ for ix, word in enumerate(subset):
     def hr(v, fill=" "):
         str = v if v else ""
         return str.ljust(20, fill)
+    def gender(v):
+        if v == "m":
+            return "m."
+        if v == "f":
+            return "vr."
+        if v == "s":
+            return "onz."
+        return None
     print(f"{hr('Extra')} | {hr('Geslacht')} | {hr('Vertaling')} | {hr('tip')}")
     print(f"{hr('', '-')} | {hr('', '-')} | {hr('', '-')} | {hr('', '-')}")
-    print(f"{hr(word.extra)} | {hr(word.gender)} | {hr(word.dutch)} | {hr(word.tip)}")
+    print(f"{hr(word.extra)} | {hr(gender(word.gender))} | {hr(word.dutch)} | {hr(word.tip)}")
     while True:
         answer = input("Had je het juist? (j,n): ")
         if answer == "j" or answer == "n":
