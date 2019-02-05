@@ -1,0 +1,11 @@
+[book](grade:1)(name:vestibulum){
+    [word](id:1)(latin:filius)(dutch:zoon)(extra:fili-)(gender:m)
+    [word](id:2)(latin:filia)(dutch:dochter)(extra:fili-)(gender:f)
+    [word](id:3)(latin:meus)(dutch:mijn)(extra:mea, meum)
+    [word](id:4)(latin:tuus)(dutch:jouw, je, uw)(extra:tua, tuum)
+    [word](id:5)(latin:habitare)(dutch:wonen, bewonen)(extra:habito)
+    [word](id:6)(latin:esse)(dutch:zijn)(extra:sum)
+    [word](id:7)(latin:ego)(dutch:ik)(tip:egoist)
+    [word](id:8)(latin:tu)(dutch:jij, u)
+    [word](id:9)(latin:nunc)(dutch:nu)
+}

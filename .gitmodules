@@ -1,0 +1,4 @@
+[submodule "gubg.io"]
+	path = gubg.io
+	url = https://github.com/gfannes/gubg.io
+	branch = master
