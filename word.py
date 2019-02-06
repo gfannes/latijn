@@ -31,6 +31,9 @@ class Book:
     def add(self, word):
         self.ary.append(word)
 
+    def prune(self, six, eix):
+        self.ary = self.ary[six:eix]
+
     def select_subset(self, size):
         return random.sample(self.ary, size)
 

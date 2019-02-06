@@ -7,15 +7,12 @@ import util
 book = word.Book.load("vestibulum.naft")
 
 print("Hallo Tibe, ben je er klaar voor?")
-while True:
-    nr = input(f"Hoeveel woorden wil je afvragen? Maximum is {len(book)}. ")
-    try:
-        nr = int(nr)
-        if nr <= len(book):
-            break
-        print(f"Er zijn maar {len(book)} woorden, ik kan er geen {nr} selecteren")
-    except ValueError:
-        print(f"{nr} is geen getal, probeer opnieuw")
+
+six = util.input_int(f"Van waar wil je beginnen?", 1, len(book))
+eix = util.input_int(f"Tot waar wil je gaan?", 1, len(book))
+book.prune(six-1, eix)
+
+nr = util.input_int(f"Hoeveel woorden wil je afvragen? Maximum is {len(book)}.", 1, len(book))
 
 score = util.Score()
 
@@ -40,7 +37,10 @@ for ix, word in enumerate(subset):
     while True:
         answer = input("Had je het juist? (j,n): ")
         if answer == "j" or answer == "n":
-            score.update(answer == "j")
+            correct = (answer == "j")
+            score.update(correct)
+            with open("log.naft", "a") as fo:
+                fo.write(f"[{'ok' if correct else 'ko'}](id:{word.id})\n")
             break
         print("Ik kon je antwoord niet begrijpen")
 
