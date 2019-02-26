@@ -400,4 +400,14 @@
     [word](id:374)(latin:genus)(dutch:1. afkomst 2. geslacht 3. soort)(extra:generis)(gender:s)(tip:generatie)
     [word](id:375)(latin:quidem)(dutch:1. wel 2. in elk geval)
     [word](id:376)(latin:vix)(dutch:nauwelijks)
+
+    [word](id:377)(latin:latus)(dutch:breed, wijd)(extra:lata, latum)
+    [word](id:378)(latin:mensis)(dutch:maand)(extra:mensis)(gender:m)
+    [word](id:379)(latin:femina)(dutch:vrouw)(extra:feminae)(gender:f)
+    [word](id:380)(latin:vilicus)(dutch:opzichter, rentmeester)(extra:vilici)(gender:m)
+    [word](id:381)(latin:negotium)(dutch:1. activiteit 2. probleem 3. opdracht)(extra:negotii)(gender:s)
+    [word](id:382)(latin:animus)(dutch:1. geest, ziel 2. hart, gemoed)(extra:animi)(gender:m)(tip:animo)
+    [word](id:383)(latin:modus)(dutch:1. maat 2. manier, wijze)(extra:modi)(gender:m)(tip:mode)
+    [word](id:384)(latin:iustus)(dutch:1. rechtvaardig 2. juist)(extra:iusta, iustum)
+    [word](id:385)(latin:umbra)(dutch:schaduw)(extra:umbrae)(gender:f)
 }
