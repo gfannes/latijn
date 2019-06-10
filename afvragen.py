@@ -30,7 +30,9 @@ for ix, word in enumerate(subset):
             return "vr."
         if v == "s":
             return "onz."
-        return None
+        if v == "m/f":
+            return "m./vr."
+        return v
     print(f"{hr('Extra')} | {hr('Geslacht')} | {hr('Vertaling')} | {hr('tip')}")
     print(f"{hr('', '-')} | {hr('', '-')} | {hr('', '-')} | {hr('', '-')}")
     print(f"{hr(word.extra)} | {hr(gender(word.gender))} | {hr(word.dutch)} | {hr(word.tip)}")

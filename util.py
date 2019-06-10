@@ -15,7 +15,7 @@ def input_int(msg, min, max):
         v = input(msg+" ")
         try:
             v = int(v)
-            assert(min < max)
+            assert(min <= max)
             if min <= v and v <= max:
                 #OK: input is accepted
                 return v
